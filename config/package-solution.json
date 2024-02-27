@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "user-profile-card-client-side-solution",
+    "id": "2fe1dcc6-2c2a-42cb-9349-897ef014db6f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "user-profile-card description"
+      },
+      "longDescription": {
+        "default": "user-profile-card description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "user-profile-card Feature",
+        "description": "The feature that activates elements of the user-profile-card solution.",
+        "id": "b04a2233-ea4c-4fb8-a001-16f0a04def62",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/user-profile-card.sppkg"
+  }
+}

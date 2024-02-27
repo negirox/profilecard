@@ -1,0 +1,240 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.profilecard {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+.mainDiv {
+  width: 25.75rem;
+  height: 24.188rem;
+  position: relative;
+  background: white;
+  border: 2px #218BC9 solid;
+}
+
+.firstDiv {
+  width: 12.5rem;
+  height: 12.5rem;
+  left: 6.563rem;
+  top: 1.875rem;
+  position: absolute;
+ // background: #63666A;
+  border-radius: 624.938rem
+}
+
+.secondDiv {
+  width: 25.813rem;
+  height: 15.313rem;
+  left: -0.063rem;
+  top: 8.875rem;
+  position: absolute;
+  background: #218BC9;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border: 1px #218BC9 solid
+}
+
+.thirdDiv {
+  width: 172.11px;
+  height: 159px;
+  left: 123.73px;
+  top: 46px;
+  position: absolute
+}
+
+.fourthDiv {
+  width: 151.49px;
+  height: 151.49px;
+  left: -2.24px;
+  top: 3.76px;
+  position: absolute;
+  //background: #218BC9;
+  border-radius: 9999px;
+  //border: 6px #218BC9 solid
+}
+
+.fifthDiv {
+  width: 159px;
+  height: 159px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 9999px;
+  border: 1px #218bc9 solid
+}
+
+.sixthDiv {
+  width: 146.58px;
+  height: 146.58px;
+  left: 2.32px;
+  top: 3.7px;
+  position: absolute;
+  background: #B6B6B6;
+  border-radius: 9999px;
+  border: 4.01px #A187BF solid
+}
+
+.seventhDiv {
+  left: 120px;
+  top: 220px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: ADPortsGroup;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.77px;
+  word-wrap: break-word
+}
+
+.eigthDiv {
+  left: 143px;
+  top: 253px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: ADPortsGroup;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.58px;
+  word-wrap: break-word
+}
+
+.nineDiv {
+  left: 54px;
+  top: 293px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex
+}
+
+.tenDiv {
+  width: 84px;
+  height: 51.96px;
+  position: relative
+}
+
+.elevenDiv {
+  width: 51.75px;
+  height: 16px;
+  left: 2px;
+  top: 0px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 3.69px;
+  display: inline-flex
+}
+
+.twelveDiv {
+  width: 8.06px;
+  height: 8.08px;
+  position: relative
+}
+
+.thirteenDiv {
+  width: 6.45px;
+  height: 4.31px;
+  left: 6.45px;
+  top: 1.88px;
+  position: absolute;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  background: white
+}
+
+.fourteenDiv {
+  width: 8.06px;
+  height: 8.08px;
+  left: 0px;
+  top: 0px;
+  position: absolute
+}
+
+.fifteenDiv {
+  color: white;
+  font-size: 10px;
+  font-family: ADPortsGroup;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word
+}
+
+.sixteenDiv {
+  left: 0px;
+  top: 15px;
+  position: absolute;
+  color: white;
+  font-size: 14.77px;
+  font-family: ADPortsGroup;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.seventeenDiv {
+  left: 0px;
+  top: 36.96px;
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  font-family: ADPortsGroup;
+  font-weight: 400;
+  line-height: 15px;
+  word-wrap: break-word
+}
+
+.eighteenDiv {
+  width: 1px;
+  height: 48px;
+  background: white
+}
+
+.nineteenDiv {
+  width: 185px;
+  height: 47px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden
+}
+
+.twentyDiv {
+  left: 27px;
+  top: 12px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  display: inline-flex
+}
+
+.twentyoneDiv {
+  text-align: center;
+  color: #A187BF;
+  font-size: 14px;
+  font-family: ADPortsGroup;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.twentytwoDiv {
+  width: 8px;
+  height: 14px;
+  transform-origin: 0 0;
+  background: #A187BF
+}
+
+.profilePic{
+  width: -webkit-fill-available;
+  border-radius: 999px;
+}

@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "user-profile-card",
+    "libraryId": "2fe1dcc6-2c2a-42cb-9349-897ef014db6f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "user-profile-card",
+    "solutionShortDescription": "user-profile-card description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

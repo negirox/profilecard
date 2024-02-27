@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "profilecard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/profilecard/ProfilecardWebPart.js",
+          "manifest": "./src/webparts/profilecard/ProfilecardWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ProfilecardWebPartStrings": "lib/webparts/profilecard/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
