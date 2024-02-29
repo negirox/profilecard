@@ -11,7 +11,7 @@ export class SPHelpers implements ISPHelper {
     constructor(client: SPHttpClient) {
         this._client = client;
     }
-    public async getListData(url: string) {
+    public async getListData(url: string):Promise<any> {
         const response = await this._client.get(url, this._clientConfig);
         return await response.json();
     }

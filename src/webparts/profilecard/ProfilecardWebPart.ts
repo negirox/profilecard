@@ -4,7 +4,8 @@ import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
   IPropertyPaneDropdownOption,
-  PropertyPaneDropdown
+  PropertyPaneDropdown,
+  PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as strings from 'ProfilecardWebPartStrings';
@@ -19,6 +20,9 @@ export interface IProfilecardWebPartProps {
   userApplicationlistName: string;
   adminUserlistName: string;
   userMasterList: string;
+  defaultBackgroundImage:string;
+  defaultbirthdayimage:string;
+  defaultannivarsaryimage:string;
 }
 
 export default class ProfilecardWebPart extends BaseClientSideWebPart<IProfilecardWebPartProps> {
@@ -33,6 +37,9 @@ export default class ProfilecardWebPart extends BaseClientSideWebPart<IProfileca
         adminUserlistName: this.properties.adminUserlistName ?? ListNames.AdminConfiguration,
         userMasterList: this.properties.userMasterList ?? ListNames.UserMaster,
         webpartContext: this.context,
+        defaultBackgroundImage:this.properties.defaultBackgroundImage,
+        defaultbirthdayimage:this.properties.defaultbirthdayimage,
+        defaultannivarsaryimage:this.properties.defaultannivarsaryimage
       }
     );
 
@@ -97,7 +104,16 @@ export default class ProfilecardWebPart extends BaseClientSideWebPart<IProfileca
                 PropertyPaneDropdown('userMasterList', {
                   label: 'Select User Master list',
                   options: [...this.dropdownOptions]
-                })
+                }),
+                PropertyPaneTextField('defaultBackgroundImage',{
+                  label:'Enter Background Image'
+                }),
+                PropertyPaneTextField('defaultbirthdayimage',{
+                  label:'Enter Birthday Image'
+                }),
+                PropertyPaneTextField('defaultannivarsaryimage',{
+                  label:'Enter Anniversary Image'
+                }),
               ]
             }
           ]

@@ -1,15 +1,19 @@
 @import '~@fluentui/react/dist/sass/References.scss';
 
+
 .profilecard {
   overflow: hidden;
-  padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
-  }
+  padding: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 .mainDiv {
+  font-family: 'ADPortsGroup';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   width: 25.75rem;
   height: 24.188rem;
   position: relative;
@@ -23,7 +27,7 @@
   left: 6.563rem;
   top: 1.875rem;
   position: absolute;
- // background: #63666A;
+  // background: #63666A;
   border-radius: 624.938rem
 }
 
@@ -39,10 +43,10 @@
 }
 
 .thirdDiv {
-  width: 172.11px;
-  height: 159px;
-  left: 123.73px;
-  top: 46px;
+  width: 10.757rem;
+  height: 9.938rem;
+  left: 7.733rem;
+  top: 2.875rem;
   position: absolute
 }
 
@@ -58,94 +62,86 @@
 }
 
 .fifthDiv {
-  width: 159px;
-  height: 159px;
+  width: 9.938rem;
+  height: 9.938rem;
   left: 0px;
   top: 0px;
   position: absolute;
   background: white;
-  border-radius: 9999px;
+  border-radius: 624.938rem;
   border: 1px #218bc9 solid
 }
 
 .sixthDiv {
-  width: 146.58px;
-  height: 146.58px;
-  left: 2.32px;
-  top: 3.7px;
+  width: 9.161rem;
+  height: 9.161rem;
+  left: 0.145rem;
+  top: 0.231rem;
   position: absolute;
   background: #B6B6B6;
-  border-radius: 9999px;
-  border: 4.01px #A187BF solid
+  border-radius: 624.938rem;
+  border: 0.251rem #A187BF solid
 }
 
 .seventhDiv {
-  left: 120px;
-  top: 220px;
+  left: 7.5rem;
+  top: 13.75rem;
   position: absolute;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: ADPortsGroup;
   font-weight: 700;
   text-transform: capitalize;
-  letter-spacing: 0.77px;
+  letter-spacing: 0.048rem;
   word-wrap: break-word
 }
 
 .eigthDiv {
-  left: 143px;
-  top: 253px;
+  left: 8.938rem;
+  top: 15.813rem;
   position: absolute;
   text-align: center;
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: ADPortsGroup;
   font-weight: 400;
   text-transform: capitalize;
-  letter-spacing: 0.58px;
+  letter-spacing: 00.036rem;
   word-wrap: break-word
 }
 
 .nineDiv {
-  left: 54px;
-  top: 293px;
+  left: 3.375rem;
+  top: 18.313rem;
   position: absolute;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   display: inline-flex
 }
 
 .tenDiv {
-  width: 84px;
-  height: 51.96px;
+  width: 5.25rem;
+  height: 3.248rem;
   position: relative
 }
 
 .elevenDiv {
-  width: 51.75px;
-  height: 16px;
-  left: 2px;
-  top: 0px;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  gap: 3.69px;
+  gap: 0.231rem;
   display: inline-flex
 }
 
 .twelveDiv {
-  width: 8.06px;
-  height: 8.08px;
+  top:-0.188rem;
   position: relative
 }
 
 .thirteenDiv {
-  width: 6.45px;
-  height: 4.31px;
-  left: 6.45px;
-  top: 1.88px;
+  width: 0.403rem;
+  height: 0.269rem;
+  left: 0.403rem;
+  top: 0.118rem;
   position: absolute;
   transform: rotate(180deg);
   transform-origin: 0 0;
@@ -153,16 +149,15 @@
 }
 
 .fourteenDiv {
-  width: 8.06px;
-  height: 8.08px;
-  left: 0px;
-  top: 0px;
-  position: absolute
+  width: 0.504rem;
+  height: 0.505rem;
 }
-
+.arrowFill{
+  width: -webkit-fill-available;
+}
 .fifteenDiv {
   color: white;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-family: ADPortsGroup;
   font-weight: 400;
   text-transform: uppercase;
@@ -170,71 +165,72 @@
 }
 
 .sixteenDiv {
-  left: 0px;
-  top: 15px;
+  left: 0rem;
+  top: 0.938rem;
   position: absolute;
   color: white;
-  font-size: 14.77px;
+  font-size: 0.923rem;
   font-family: ADPortsGroup;
   font-weight: 700;
   word-wrap: break-word
 }
 
 .seventeenDiv {
-  left: 0px;
-  top: 36.96px;
+  left: 0rem;
+  top: 2.31rem;
   position: absolute;
   color: white;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-family: ADPortsGroup;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 0.938rem;
   word-wrap: break-word
 }
 
 .eighteenDiv {
-  width: 1px;
-  height: 48px;
+  width: 0.063rem;
+  height: 3rem;
   background: white
 }
 
 .nineteenDiv {
-  width: 185px;
-  height: 47px;
+  width: 11.563rem;
+  height: 2.938rem;
   position: relative;
   background: white;
   box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 0.25rem;
   overflow: hidden
 }
 
 .twentyDiv {
-  left: 27px;
-  top: 12px;
+  left: 1.688rem;
+  top: 0.75rem;
   position: absolute;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 0.938rem;
   display: inline-flex
 }
 
 .twentyoneDiv {
   text-align: center;
   color: #A187BF;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: ADPortsGroup;
   font-weight: 700;
   word-wrap: break-word
 }
 
 .twentytwoDiv {
-  width: 8px;
-  height: 14px;
+  width: 0.5rem;
+  height: 0.875rem;
   transform-origin: 0 0;
   background: #A187BF
 }
 
-.profilePic{
-  width: -webkit-fill-available;
-  border-radius: 999px;
+.profilePic {
+  width: 9.161rem;
+  height: 9.161rem;
+  border-radius: 62.438rem;
 }

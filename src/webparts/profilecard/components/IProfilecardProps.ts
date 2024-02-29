@@ -6,4 +6,7 @@ export interface IProfilecardProps {
   adminUserlistName:string;
   userMasterList:string;
   webpartContext:WebPartContext;
+  defaultBackgroundImage:string;
+  defaultbirthdayimage:string;
+  defaultannivarsaryimage:string;
 }

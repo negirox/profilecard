@@ -6,6 +6,7 @@ import { ISPHelper } from '../../../helpers/ISPhelper';
 import { SPHelpers } from '../../../helpers/SPhelpers';
 import { UserMaster, UserMasterResponse } from '../../../model/SPResponse';
 import { Spinner, SpinnerSize } from 'office-ui-fabric-react';
+import './../../../fonts/font-stylesheet.module.scss';
 export default class Profilecard extends React.Component<IProfilecardProps, IProfileCardState> {
   private _spHelper: ISPHelper;
   constructor(props: IProfilecardProps) {
@@ -48,12 +49,12 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
     const user = this.state.UserData;
     const photo: string = `/_layouts/15/userphoto.aspx?size=L&accountname=${user?.UserEmail}`;
     const currentSite = this.props.webpartContext.pageContext.web.absoluteUrl;
-    let celebrationURL = `${currentSite}/SiteAssets/ADPorts/profilecard/Blank.png`;
+    let celebrationURL = this.props.defaultBackgroundImage ?? `${currentSite}/SiteAssets/ADPorts/profilecard/Blank.png`;
     if (this.state.isBirthday) {
-      celebrationURL = `${currentSite}/SiteAssets/ADPorts/profilecard/birthday.png`
+      celebrationURL = this.props.defaultbirthdayimage ?? `${currentSite}/SiteAssets/ADPorts/profilecard/birthday.png`
     }
     else if (this.state.isAnniversary) {
-      celebrationURL = `${currentSite}/SiteAssets/ADPorts/profilecard/Anniversary.png`
+      celebrationURL = this.props.defaultannivarsaryimage ?? `${currentSite}/SiteAssets/ADPorts/profilecard/Anniversary.png`
     }
     console.log(celebrationURL);
     return (
@@ -63,11 +64,11 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
           <Spinner label="Loading users..." size={SpinnerSize.large} />
         }
         {!this.state.loading && <div className={styles.mainDiv} style={{ backgroundImage: `url('${celebrationURL}')` }}>
-          <div className={styles.firstDiv}></div>
-          <div className={styles.secondDiv}></div>
+          <div className={styles.firstDiv} />
+          <div className={styles.secondDiv} />
           <div className={styles.thirdDiv}>
-            <div className={styles.fourthDiv}></div>
-            <div className={styles.fifthDiv}></div>
+            <div className={styles.fourthDiv} />
+            <div className={styles.fifthDiv} />
             <div className={styles.sixthDiv}>
               <img className={styles.profilePic} src={photo} />
             </div>
@@ -87,9 +88,8 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
             <div className={styles.tenDiv}>
               <div className={styles.elevenDiv}>
                 <div className={styles.twelveDiv}>
-                  <div className={styles.thirteenDiv}></div>
                   <div className={styles.fourteenDiv}>
-                    &#8594;
+                    <img className={styles.arrowFill} src={`${currentSite}/SiteAssets/ADPorts/profilecard/intime.png`} />
                   </div>
                 </div>
                 <div className={styles.fifteenDiv}>IN-TIME</div>
@@ -97,12 +97,12 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
               <div className={styles.sixteenDiv}>07:00 AM</div>
               <div className={styles.seventeenDiv}>Swiped at Kezad</div>
             </div>
-            <div className={styles.eighteenDiv}></div>
+            <div className={styles.eighteenDiv} />
             <div className={styles.nineteenDiv}>
               <div className={styles.twentyDiv}>
                 <div className={styles.twentyoneDiv}>{user.UserCluster}</div>
                 <div className={styles.twentytwoDiv}>
-                  &#62;
+                  <img className={styles.arrowFill} src={`${currentSite}/SiteAssets/ADPorts/profilecard/rightarrow.png`} />
                 </div>
               </div>
             </div>
