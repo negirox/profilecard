@@ -4,9 +4,9 @@ import { IProfilecardProps } from './IProfilecardProps';
 import { IProfileCardState } from './IProfileCardState';
 import { ISPHelper } from '../../../helpers/ISPhelper';
 import { SPHelpers } from '../../../helpers/SPhelpers';
-import { UserMaster, UserMasterResponse } from '../../../model/SPResponse';
+import { UserMaster, UserMasterResponse, UserProfileProps } from '../../../model/SPResponse';
 import { Spinner, SpinnerSize } from 'office-ui-fabric-react';
-import './../../../fonts/font-stylesheet.module.scss';
+//import './../../../fonts/font-stylesheet.module.scss';
 export default class Profilecard extends React.Component<IProfilecardProps, IProfileCardState> {
   private _spHelper: ISPHelper;
   constructor(props: IProfilecardProps) {
@@ -22,11 +22,15 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
   async componentDidMount(): Promise<void> {
     const userMasterData: UserMasterResponse = await this._spHelper.getUserMaster(this.props, this.props.webpartContext.pageContext.user.email, 1);
     console.log(userMasterData);
+    const userPropertiesURL = this.props.webpartContext.pageContext.web.absoluteUrl + `/_api/SP.UserProfiles.PeopleManager/GetMyProperties`;
+    const userProperties:UserProfileProps = await this._spHelper.getListData(userPropertiesURL);
+    console.log(userProperties);
     this.RenderUserData(userMasterData);
   }
   private RenderUserData(userMasterData: UserMasterResponse): void {
     if (userMasterData.value.length > 0) {
       const respo: UserMaster = userMasterData.value[0];
+
       const isAnniversary = this.CheckDate(respo.DateOfJoining);
       const isBirthday = this.CheckDate(respo.DateOfBirth);
 
