@@ -5,4 +5,7 @@ export interface IProfileCardState{
     loading:boolean;
     isAnniversary:boolean;
     isBirthday:boolean;
+    birthdays:UserMaster[];
+    anniverSaries:UserMaster[];
+    newJoiners:UserMaster[];
 }

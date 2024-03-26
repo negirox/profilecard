@@ -51,9 +51,6 @@ export default class ProfilecardWebPart extends BaseClientSideWebPart<IProfileca
     const options = await this.fetchOptions();
     this.dropdownOptions = options;
   }
-
-
-
   protected onDispose(): void {
     ReactDom.unmountComponentAtNode(this.domElement);
   }

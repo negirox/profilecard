@@ -15,10 +15,12 @@
   font-style: normal;
   font-display: swap;
   width: 25.75rem;
-  height: 24.188rem;
+  height: 25.88rem;
   position: relative;
   background: white;
   border: 2px #218BC9 solid;
+  max-width: 23rem;
+  top: 0rem;
 }
 
 .firstDiv {
@@ -29,25 +31,27 @@
   position: absolute;
   // background: #63666A;
   border-radius: 624.938rem
+
+
 }
 
 .secondDiv {
-  width: 25.813rem;
-  height: 15.313rem;
+  width: 23rem;
+  height: 16.913rem;
   left: -0.063rem;
   top: 8.875rem;
   position: absolute;
   background: #218BC9;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
-  border: 1px #218BC9 solid
+  border: 1px #218BC9 solid;
 }
 
 .thirdDiv {
   width: 10.757rem;
   height: 9.938rem;
-  left: 7.733rem;
+  left: 6.733rem;
   top: 2.875rem;
-  position: absolute
+  position: absolute;
 }
 
 .fourthDiv {
@@ -70,6 +74,8 @@
   background: white;
   border-radius: 624.938rem;
   border: 1px #218bc9 solid
+
+ 
 }
 
 .sixthDiv {
@@ -84,7 +90,7 @@
 }
 
 .seventhDiv {
-  left: 7.5rem;
+  left: 5.5rem;
   top: 13.75rem;
   position: absolute;
   text-align: center;
@@ -98,7 +104,7 @@
 }
 
 .eigthDiv {
-  left: 8.938rem;
+  left: 7.938rem;
   top: 15.813rem;
   position: absolute;
   text-align: center;
@@ -108,11 +114,11 @@
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 00.036rem;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 .nineDiv {
-  left: 3.375rem;
+  left: 2.375rem;
   top: 18.313rem;
   position: absolute;
   justify-content: flex-start;

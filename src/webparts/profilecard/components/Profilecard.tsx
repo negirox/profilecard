@@ -15,7 +15,10 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
       UserData: null,
       loading: true,
       isAnniversary: false,
-      isBirthday: false
+      isBirthday: false,
+      anniverSaries:[],
+      birthdays:[],
+      newJoiners:[]
     }
     this._spHelper = new SPHelpers(this.props.webpartContext.spHttpClient);
   }
@@ -63,6 +66,7 @@ export default class Profilecard extends React.Component<IProfilecardProps, IPro
     console.log(celebrationURL);
     return (
       <section>
+        <h3>Profile</h3>
         {
           this.state.loading &&
           <Spinner label="Loading users..." size={SpinnerSize.large} />
